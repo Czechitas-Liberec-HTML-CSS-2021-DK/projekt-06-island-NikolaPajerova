@@ -44,7 +44,15 @@ h2 {
 
 .perex {
     padding: 30px;
-    border-bottom: 2px solid white;
+
+}
+
+.autor {
+    opacity: 80%;
+    padding-top: 20px;
+    border-top: 2px solid white;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 .hlavicka {
@@ -56,17 +64,22 @@ h2 {
 
 
 /* MENU */
-.menu li {
-    text-align: center;
-    padding-top: 10px;
+.menu {
     display: flex;
     flex-direction: column;
 }
 
-li {
+.menu li {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    border-bottom: 1px solid gray;
     color: gray;
     text-transform: uppercase;
-    text-decoration: none;
 }
 
 .jmeno {
@@ -82,7 +95,21 @@ li {
     padding: 20px;
 }
 
+img {
+    width: 100%;
+}
+
+a {
+    color: gray;
+}
+
 /* FOTOGALERIE */
+.galerie {
+    display: flex;
+    flex-direction: column;
+    width: 120%;
+    margin-left: -40px;
+}
 
 
 /* PATICKA */
@@ -93,28 +120,123 @@ li {
 
 
 @media screen and (min-width: 500px) {
-    .menu li {
+    .menu {
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu li {
+        border: 1px solid gray;
+        padding: 10px;
     }
 
     .galerie {
         display: flex;
+        width: 100%;
+        flex-direction: row;
     }
 
     .sada1 {
         width: 50%;
+        flex-direction: column;
     }
 
     .sada2 {
         width: 50%;
+        flex-direction: column;
+    }
+
+    a {
+        color: inherit;
+    }
+
+    .popisek {
+        color: white;
+        position: relative;
+        right: 5px;
+        bottom: 5px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        background-color: beige;
+    }
+
+    .hlavicka {
+        padding: 30px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .oddeleni_obsahu {
+        width: 80%;
+        background-color: white;
+        margin: 0 auto;
+        margin-top: -30px;
+    }
+
+    .popisek {
+        color: white;
+        position: initial;
+        right: 0.5rem;
+        bottom: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .jmeno {
+        color: inherit;
+    }
+
+    .uvodni_cast {
+        display: flex;
+        flex: row;
+    }
+
+    .obsah {
+        width: auto;
+        margin-top: -10px;
+        margin-left: ;
+    }
+
+    .menu {
+        font-size: 0.7rem;
+        text-align: left;
+        padding-left: 50px;
+        padding-right: 50px;
+        float: left;
+        color: lightgray;
+        text-decoration: none;
+    }
+
+    .menu li {
+        border-bottom: 1px solid lightgray;
+    }
+
+    .psani1 {
+        padding-left: 5%;
+        padding-right: 30%;
+    }
+
+    .psani2 {
+        padding-left: 20%;
+        padding-right: 5%;
+    }
+
+    .videt {
+        padding-left: 20%;
+    }
+
+    .galerie {
+        display: flex;
+        flex: 30%;
     }
 
     .popisek {
         color: white;
         position: relative;
     }
-
-    .jmeno {}
 }
-
-@media screen and (min-width: 1000px) {}
