@@ -152,10 +152,7 @@ a {
     }
 
     .popisek {
-        color: white;
-        position: relative;
-        right: 5px;
-        bottom: 5px;
+        display: none;
     }
 }
 
@@ -199,7 +196,6 @@ a {
     .obsah {
         width: auto;
         margin-top: -10px;
-        margin-left: ;
     }
 
     .menu {
@@ -232,11 +228,13 @@ a {
 
     .galerie {
         display: flex;
-        flex: 30%;
     }
 
     .popisek {
         color: white;
-        position: relative;
+        position: absolute;
+        right: 0.5rem;
+        bottom: 0.5rem;
+        font-size: 1rem;
     }
 }
